@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let array = window.prompt('Enter a phrase')
+let Upper = 'QWERTYUIOPASDFGHJKLZXCVBNM'
+let Lower = 'qwertyuiopasdfghjklzxcvbnm'
+let result = []
+for(let i=0;i<array.length;i++){
+    if(Upper.indexOf(array[i]) !== -1){
+        result.push(array[i].toLowerCase())
+    }else if(Lower.indexOf(array[i]) !== -1){
+        result.push(array[i].toUpperCase())
+    }else {
+        result.push(array[i])
+    }
+}
+console.log(result.join(''))
+
+</script>
+</body>
+</html>
